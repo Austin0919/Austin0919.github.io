@@ -1,0 +1,906 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    Hexo
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="miccall" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 6.1.0"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">MICCALL</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/miccall" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="500px" href="http://500px.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-500px"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >Mybatis Plus CodeGenerator(new)</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="MyBatis-Plus-代码生成器（新）自定义配置"><a href="#MyBatis-Plus-代码生成器（新）自定义配置" class="headerlink" title="MyBatis-Plus 代码生成器（新）自定义配置"></a><center>MyBatis-Plus 代码生成器（新）自定义配置</center></h1><p>​                                                                                                                                                                           2022-04-08</p>
+<h4 id="x3D-x3D-注意：-x3D-x3D"><a href="#x3D-x3D-注意：-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;注意：&#x3D;&#x3D;"></a>&#x3D;&#x3D;<strong>注意</strong>：&#x3D;&#x3D;</h4><h4 id="x3D-x3D-适用版本：mybatis-plus-generator-3-5-1-及其以上版本，对历史版本不兼容！-x3D-x3D"><a href="#x3D-x3D-适用版本：mybatis-plus-generator-3-5-1-及其以上版本，对历史版本不兼容！-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;适用版本：mybatis-plus-generator 3.5.1 及其以上版本，对历史版本不兼容！&#x3D;&#x3D;"></a>&#x3D;&#x3D;适用版本：mybatis-plus-generator 3.5.1 及其以上版本，对历史版本不兼容！&#x3D;&#x3D;</h4><h2 id="官方文档说明"><a href="#官方文档说明" class="headerlink" title="官方文档说明"></a>官方文档说明</h2><h3 id="1-安装-导入依赖"><a href="#1-安装-导入依赖" class="headerlink" title="1.安装(导入依赖)"></a>1.安装(导入依赖)</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;com.baomidou&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mybatis-plus-generator&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;<span class="number">3.5</span><span class="number">.1</span>&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">        &lt;groupId&gt;com.baomidou&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;mybatis-plus-boot-starter&lt;/artifactId&gt;</span><br><span class="line">        &lt;version&gt;<span class="number">3.5</span><span class="number">.1</span>&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+
+<h3 id="2-快速生成（还有一种交互式生成的方式，个人使用因便捷性不予考虑）"><a href="#2-快速生成（还有一种交互式生成的方式，个人使用因便捷性不予考虑）" class="headerlink" title="2.快速生成（还有一种交互式生成的方式，个人使用因便捷性不予考虑）"></a>2.快速生成（还有一种交互式生成的方式，个人使用因便捷性不予考虑）</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">FastAutoGenerator.create(<span class="string">&quot;url&quot;</span>, <span class="string">&quot;username&quot;</span>, <span class="string">&quot;password&quot;</span>)</span><br><span class="line">    .globalConfig(builder -&gt; &#123;</span><br><span class="line">        builder.author(<span class="string">&quot;baomidou&quot;</span>) <span class="comment">// 设置作者</span></span><br><span class="line">            .enableSwagger() <span class="comment">// 开启 swagger 模式</span></span><br><span class="line">            .fileOverride() <span class="comment">// 覆盖已生成文件</span></span><br><span class="line">            .outputDir(<span class="string">&quot;D://&quot;</span>); <span class="comment">// 指定输出目录</span></span><br><span class="line">    &#125;)</span><br><span class="line">    .packageConfig(builder -&gt; &#123;</span><br><span class="line">        builder.parent(<span class="string">&quot;com.baomidou.mybatisplus.samples.generator&quot;</span>) <span class="comment">// 设置父包名</span></span><br><span class="line">            .moduleName(<span class="string">&quot;system&quot;</span>) <span class="comment">// 设置父包模块名</span></span><br><span class="line">            .pathInfo(Collections.singletonMap(OutputFile.mapperXml, <span class="string">&quot;D://&quot;</span>)); <span class="comment">// 设置mapperXml生成路径</span></span><br><span class="line">    &#125;)</span><br><span class="line">    .strategyConfig(builder -&gt; &#123;</span><br><span class="line">        builder.addInclude(<span class="string">&quot;t_simple&quot;</span>) <span class="comment">// 设置需要生成的表名</span></span><br><span class="line">            .addTablePrefix(<span class="string">&quot;t_&quot;</span>, <span class="string">&quot;c_&quot;</span>); <span class="comment">// 设置过滤表前缀</span></span><br><span class="line">    &#125;)</span><br><span class="line">    .templateEngine(<span class="keyword">new</span> <span class="title class_">FreemarkerTemplateEngine</span>()) <span class="comment">// 使用Freemarker引擎模板，默认的是Velocity引擎模板</span></span><br><span class="line">    .execute();</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-将链式编程折叠后看到结构如下："><a href="#3-将链式编程折叠后看到结构如下：" class="headerlink" title="3.将链式编程折叠后看到结构如下："></a>3.将链式编程折叠后看到结构如下：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">FastAutoGenerator</span><br><span class="line">                <span class="comment">//1配置数据源</span></span><br><span class="line">                .create(<span class="string">&quot;url&quot;</span>, <span class="string">&quot;username&quot;</span>, <span class="string">&quot;password&quot;</span>)</span><br><span class="line">                <span class="comment">//2全局配置</span></span><br><span class="line">                .globalConfig(builder -&gt;&#123;...&#125;)</span><br><span class="line">                <span class="comment">//3包配置</span></span><br><span class="line">                .packageConfig(builder -&gt;&#123;...&#125;)</span><br><span class="line">                <span class="comment">//4策略配置</span></span><br><span class="line">                .strategyConfig(builder -&gt;&#123;...&#125;)</span><br><span class="line">                <span class="comment">//5模板引擎配置</span></span><br><span class="line">                .templateEngine(<span class="keyword">new</span> <span class="title class_">FreemarkerTemplateEngine</span>())</span><br><span class="line">                <span class="comment">//6执行</span></span><br><span class="line">                .execute();</span><br><span class="line">                </span><br></pre></td></tr></table></figure>
+
+<h3 id="4-查看官方文档配置说明："><a href="#4-查看官方文档配置说明：" class="headerlink" title="4.查看官方文档配置说明："></a>4.查看官方文档配置说明：</h3><h4 id="1-数据源配置"><a href="#1-数据源配置" class="headerlink" title="1.数据源配置"></a>1.数据源配置</h4><h5 id="1-基础配置"><a href="#1-基础配置" class="headerlink" title="1.基础配置"></a>1.基础配置</h5><table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">说明</th>
+<th align="center">示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">url</td>
+<td align="center">jdbc 路径</td>
+<td align="center">jdbc:mysql:&#x2F;&#x2F;127.0.0.1:3306&#x2F;mybatis-plus</td>
+</tr>
+<tr>
+<td align="center">username</td>
+<td align="center">数据库账号</td>
+<td align="center">root</td>
+</tr>
+<tr>
+<td align="center">password</td>
+<td align="center">数据库密码</td>
+<td align="center">123456</td>
+</tr>
+</tbody></table>
+<h5 id="2-可选配置"><a href="#2-可选配置" class="headerlink" title="2.可选配置"></a>2.可选配置</h5><table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">说明</th>
+<th align="center">示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">dbQuery(IDbQuery)</td>
+<td align="center">数据库查询</td>
+<td align="center">new MySqlQuery()</td>
+</tr>
+<tr>
+<td align="center">schema(String)</td>
+<td align="center">数据库 schema(部分数据库适用)</td>
+<td align="center">mybatis-plus</td>
+</tr>
+<tr>
+<td align="center">typeConvert(ITypeConvert)</td>
+<td align="center">数据库类型转换器</td>
+<td align="center">new MySqlTypeConvert()</td>
+</tr>
+<tr>
+<td align="center">keyWordsHandler(IKeyWordsHandler)</td>
+<td align="center">数据库关键字处理器</td>
+<td align="center">new MySqlKeyWordsHandler()</td>
+</tr>
+</tbody></table>
+<p>注：new MySqlQuery()  </p>
+<p>​        使用代理模式来实现延迟加载的意义：比如某客户端软件，需要根据用户请求，去数据库查询数据，在查询数据前，需要获取数据库连接，此时初始化系统所有类。这会使得系统的启动速度变得非常缓慢，因此，使用代理模式，使用代理类，分装对数据查询中的初始化操作，当系统启动时，初始化代理类，而非真实的数据库查询类。在用户真正查询时，再由代理类单独去加载真实的数据库查询类。完成用户的请求。其核心思想是：如果当前没有使用这个组件，则不需要真正的去初始化它，而是使用一个代理对象代替它。等到真正用的时候再去加载初始化它。</p>
+<p>​         动态代理：动态代理是指在运行时，动态生成代理类。即，代理类的字节码将在运行时动态生成并载入当前的ClassLoader。动态代理有许多好处：比如不需要为每一个真实主题写一个代理类。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="title class_">DataSourceConfig</span>.Builder(<span class="string">&quot;jdbc:mysql://127.0.0.1:3306/mybatis-plus&quot;</span>,<span class="string">&quot;root&quot;</span>,<span class="string">&quot;123456&quot;</span>)</span><br><span class="line">    .dbQuery(<span class="keyword">new</span> <span class="title class_">MySqlQuery</span>())<span class="comment">//数据库查询</span></span><br><span class="line">    .schema(<span class="string">&quot;mybatis-plus&quot;</span>)<span class="comment">//数据库 schema(部分数据库适用)</span></span><br><span class="line">    .typeConvert(<span class="keyword">new</span> <span class="title class_">MySqlTypeConvert</span>())<span class="comment">//数据库类型转换器</span></span><br><span class="line">    .keyWordsHandler(<span class="keyword">new</span> <span class="title class_">MySqlKeyWordsHandler</span>())<span class="comment">//数据库关键字处理器</span></span><br><span class="line">    .build();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-全局配置"><a href="#2-全局配置" class="headerlink" title="2.全局配置"></a>2.全局配置</h4><table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">说明</th>
+<th align="center">示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">fileOverride</td>
+<td align="center">覆盖已生成文件（&#x3D;&#x3D;3.5.2已弃用&#x3D;&#x3D;）</td>
+<td align="center">默认值:false</td>
+</tr>
+<tr>
+<td align="center">disableOpenDir</td>
+<td align="center">禁止打开输出目录</td>
+<td align="center">默认值:true</td>
+</tr>
+<tr>
+<td align="center">outputDir(String)</td>
+<td align="center">指定输出目录</td>
+<td align="center">D:\Document\idea-workspace\demo01\src\main\java</td>
+</tr>
+<tr>
+<td align="center">author(String)</td>
+<td align="center">作者名</td>
+<td align="center">baomidou 默认值:作者</td>
+</tr>
+<tr>
+<td align="center">enableKotlin</td>
+<td align="center">开启 kotlin 模式</td>
+<td align="center">默认值:false</td>
+</tr>
+<tr>
+<td align="center">enableSwagger</td>
+<td align="center">开启 swagger 模式</td>
+<td align="center">默认值:false</td>
+</tr>
+<tr>
+<td align="center">dateType(DateType)</td>
+<td align="center">时间策略</td>
+<td align="center">DateType.ONLY_DATE 默认值: DateType.TIME_PACK</td>
+</tr>
+<tr>
+<td align="center">commentDate(String)</td>
+<td align="center">注释日期</td>
+<td align="center">默认值: yyyy-MM-dd</td>
+</tr>
+</tbody></table>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="title class_">GlobalConfig</span>.Builder()</span><br><span class="line">    .fileOverride()<span class="comment">//覆盖已生成文件</span></span><br><span class="line">    .outputDir(<span class="string">&quot;&quot;</span>)<span class="comment">//指定输出目录</span></span><br><span class="line">    .author(<span class="string">&quot;austin&quot;</span>)<span class="comment">//作者名</span></span><br><span class="line">    .enableKotlin()<span class="comment">//开启 kotlin 模式</span></span><br><span class="line">    .enableSwagger()<span class="comment">//开启 swagger 模式</span></span><br><span class="line">    .dateType(DateType.TIME_PACK)<span class="comment">//时间策略</span></span><br><span class="line">    .commentDate(<span class="string">&quot;yyyy-MM-dd&quot;</span>)<span class="comment">//注释日期</span></span><br><span class="line">    .build();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="3-包配置"><a href="#3-包配置" class="headerlink" title="3.包配置"></a>3.包配置</h4><table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">说明</th>
+<th align="center">示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">parent(String)</td>
+<td align="center">父包名</td>
+<td align="center">默认值:com.baomidou</td>
+</tr>
+<tr>
+<td align="center">moduleName(String)</td>
+<td align="center">父包模块名</td>
+<td align="center">默认值:无</td>
+</tr>
+<tr>
+<td align="center">entity(String)</td>
+<td align="center">Entity 包名</td>
+<td align="center">默认值:entity</td>
+</tr>
+<tr>
+<td align="center">service(String)</td>
+<td align="center">Service 包名</td>
+<td align="center">默认值:service</td>
+</tr>
+<tr>
+<td align="center">serviceImpl(String)</td>
+<td align="center">Service Impl 包名</td>
+<td align="center">默认值:service.impl</td>
+</tr>
+<tr>
+<td align="center">mapper(String)</td>
+<td align="center">Mapper 包名</td>
+<td align="center">默认值:mapper</td>
+</tr>
+<tr>
+<td align="center">xml(String)</td>
+<td align="center">Mapper XML 包名</td>
+<td align="center">默认值:mapper.xml</td>
+</tr>
+<tr>
+<td align="center">controller(String)</td>
+<td align="center">Controller 包名</td>
+<td align="center">默认值:controller</td>
+</tr>
+<tr>
+<td align="center">other(String)</td>
+<td align="center">自定义文件包名</td>
+<td align="center">输出自定义文件时所用到的包名</td>
+</tr>
+<tr>
+<td align="center">pathInfo(Map&lt;OutputFile, String&gt;)</td>
+<td align="center">路径配置信息</td>
+<td align="center">Collections.singletonMap(OutputFile.mapperXml, “D:&#x2F;&#x2F;“)</td>
+</tr>
+</tbody></table>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="title class_">PackageConfig</span>.Builder()</span><br><span class="line">    .parent(<span class="string">&quot;com.baomidou.mybatisplus.samples.generator&quot;</span>)<span class="comment">//父包名</span></span><br><span class="line">    .moduleName(<span class="string">&quot;sys&quot;</span>)<span class="comment">//父包模块名</span></span><br><span class="line">    .entity(<span class="string">&quot;po&quot;</span>)<span class="comment">//Entity 包名</span></span><br><span class="line">    .service(<span class="string">&quot;service&quot;</span>)<span class="comment">//Service 包名</span></span><br><span class="line">    .serviceImpl(<span class="string">&quot;service.impl&quot;</span>)<span class="comment">//Service Impl 包名</span></span><br><span class="line">    .mapper(<span class="string">&quot;mapper&quot;</span>)<span class="comment">//Mapper 包名</span></span><br><span class="line">    .xml(<span class="string">&quot;mapper.xml&quot;</span>)<span class="comment">//Mapper XML包名</span></span><br><span class="line">    .controller(<span class="string">&quot;controller&quot;</span>)<span class="comment">//Controller 包名</span></span><br><span class="line">    .other(<span class="string">&quot;other&quot;</span>)<span class="comment">//自定义文件包名</span></span><br><span class="line">    .pathInfo(Collections.singletonMap(OutputFile.mapperXml, <span class="string">&quot;D://&quot;</span>))<span class="comment">//路径配置信息</span></span><br><span class="line">    .build();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="4-模板配置"><a href="#4-模板配置" class="headerlink" title="4.模板配置"></a>4.模板配置</h4><table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">说明</th>
+<th align="center">示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">disable</td>
+<td align="center">禁用所有模板</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">disable(TemplateType…)</td>
+<td align="center">禁用模板</td>
+<td align="center">TemplateType.ENTITY</td>
+</tr>
+<tr>
+<td align="center">entity(String)</td>
+<td align="center">设置实体模板路径(JAVA)</td>
+<td align="center">&#x2F;templates&#x2F;entity.java</td>
+</tr>
+<tr>
+<td align="center">entityKt(String)</td>
+<td align="center">设置实体模板路径(kotlin)</td>
+<td align="center">&#x2F;templates&#x2F;entity.java</td>
+</tr>
+<tr>
+<td align="center">service(String)</td>
+<td align="center">设置 service 模板路径</td>
+<td align="center">&#x2F;templates&#x2F;service.java</td>
+</tr>
+<tr>
+<td align="center">serviceImpl(String)</td>
+<td align="center">设置 serviceImpl 模板路径</td>
+<td align="center">&#x2F;templates&#x2F;serviceImpl.java</td>
+</tr>
+<tr>
+<td align="center">mapper(String)</td>
+<td align="center">设置 mapper 模板路径</td>
+<td align="center">&#x2F;templates&#x2F;mapper.java</td>
+</tr>
+<tr>
+<td align="center">mapperXml(String)</td>
+<td align="center">设置 mapperXml 模板路径</td>
+<td align="center">&#x2F;templates&#x2F;mapper.xml</td>
+</tr>
+<tr>
+<td align="center">controller(String)</td>
+<td align="center">设置 controller 模板路径</td>
+<td align="center">&#x2F;templates&#x2F;controller.java</td>
+</tr>
+</tbody></table>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="title class_">TemplateConfig</span>.Builder()</span><br><span class="line">    .disable(TemplateType.ENTITY)</span><br><span class="line">    .entity(<span class="string">&quot;/templates/entity.java&quot;</span>)</span><br><span class="line">    .service(<span class="string">&quot;/templates/service.java&quot;</span>)</span><br><span class="line">    .serviceImpl(<span class="string">&quot;/templates/serviceImpl.java&quot;</span>)</span><br><span class="line">    .mapper(<span class="string">&quot;/templates/mapper.java&quot;</span>)</span><br><span class="line">    .mapperXml(<span class="string">&quot;/templates/mapper.xml&quot;</span>)</span><br><span class="line">    .controller(<span class="string">&quot;/templates/controller.java&quot;</span>)</span><br><span class="line">    .build();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="5-注入配置"><a href="#5-注入配置" class="headerlink" title="5.注入配置"></a>5.注入配置</h4><table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">说明</th>
+<th align="center">示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">beforeOutputFile(BiConsumer&lt;TableInfo, Map&lt;String, Object&gt;&gt;)</td>
+<td align="center">输出文件之前消费者</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">customMap(Map&lt;String, Object&gt;)</td>
+<td align="center">自定义配置 Map 对象</td>
+<td align="center">Collections.singletonMap(“test”, “baomidou”)</td>
+</tr>
+<tr>
+<td align="center">customFile(Map&lt;String, String&gt;)</td>
+<td align="center">自定义配置模板文件</td>
+<td align="center">Collections.singletonMap(“test.txt”, “&#x2F;templates&#x2F;test.vm”)</td>
+</tr>
+</tbody></table>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="title class_">InjectionConfig</span>.Builder()</span><br><span class="line">    .beforeOutputFile((tableInfo, objectMap) -&gt; &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;tableInfo: &quot;</span> + tableInfo.getEntityName() + <span class="string">&quot; objectMap: &quot;</span> + objectMap.size());</span><br><span class="line">    &#125;)</span><br><span class="line">    .customMap(Collections.singletonMap(<span class="string">&quot;test&quot;</span>, <span class="string">&quot;baomidou&quot;</span>))</span><br><span class="line">    .customFile(Collections.singletonMap(<span class="string">&quot;test.txt&quot;</span>, <span class="string">&quot;/templates/test.vm&quot;</span>))</span><br><span class="line">    .build();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="6-策略配置"><a href="#6-策略配置" class="headerlink" title="6.策略配置"></a>6.策略配置</h4><table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">说明</th>
+<th align="center">示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">enableCapitalMode</td>
+<td align="center">开启大写命名</td>
+<td align="center">默认值:false</td>
+</tr>
+<tr>
+<td align="center">enableSkipView</td>
+<td align="center">开启跳过视图</td>
+<td align="center">默认值:false</td>
+</tr>
+<tr>
+<td align="center">disableSqlFilter</td>
+<td align="center">禁用 sql 过滤</td>
+<td align="center">默认值:true，语法不能支持使用 sql 过滤表的话，可以考虑关闭此开关</td>
+</tr>
+<tr>
+<td align="center">enableSchema</td>
+<td align="center">启用 schema</td>
+<td align="center">默认值:false，多 schema 场景的时候打开</td>
+</tr>
+<tr>
+<td align="center">likeTable(LikeTable)</td>
+<td align="center">模糊表匹配(sql 过滤)</td>
+<td align="center">likeTable 与 notLikeTable 只能配置一项</td>
+</tr>
+<tr>
+<td align="center">notLikeTable(LikeTable)</td>
+<td align="center">模糊表排除(sql 过滤)</td>
+<td align="center">likeTable 与 notLikeTable 只能配置一项</td>
+</tr>
+<tr>
+<td align="center">addInclude(String…)</td>
+<td align="center">增加表匹配(内存过滤)</td>
+<td align="center">include 与 exclude 只能配置一项</td>
+</tr>
+<tr>
+<td align="center">addExclude(String…)</td>
+<td align="center">增加表排除匹配(内存过滤)</td>
+<td align="center">include 与 exclude 只能配置一项</td>
+</tr>
+<tr>
+<td align="center">addTablePrefix(String…)</td>
+<td align="center">增加过滤表前缀</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">addTableSuffix(String…)</td>
+<td align="center">增加过滤表后缀</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">addFieldPrefix(String…)</td>
+<td align="center">增加过滤字段前缀</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">addFieldSuffix(String…)</td>
+<td align="center">增加过滤字段后缀</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">entityBuilder</td>
+<td align="center">实体策略配置</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">controllerBuilder</td>
+<td align="center">controller 策略配置</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">mapperBuilder</td>
+<td align="center">mapper 策略配置</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">serviceBuilder</td>
+<td align="center">service 策略配置</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="title class_">StrategyConfig</span>.Builder()</span><br><span class="line">    .enableCapitalMode()</span><br><span class="line">    .enableSkipView()</span><br><span class="line">    .disableSqlFilter()</span><br><span class="line">    .likeTable(<span class="keyword">new</span> <span class="title class_">LikeTable</span>(<span class="string">&quot;USER&quot;</span>))</span><br><span class="line">    .addInclude(<span class="string">&quot;t_simple&quot;</span>)</span><br><span class="line">    .addTablePrefix(<span class="string">&quot;t_&quot;</span>, <span class="string">&quot;c_&quot;</span>)</span><br><span class="line">    .addFieldSuffix(<span class="string">&quot;_flag&quot;</span>)</span><br><span class="line">    .build();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="1-Entity策略配置"><a href="#1-Entity策略配置" class="headerlink" title="1.Entity策略配置"></a>1.Entity策略配置</h5><table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">说明</th>
+<th align="center">示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">nameConvert(INameConvert)</td>
+<td align="center">名称转换实现</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">superClass(Class&lt;?&gt;)</td>
+<td align="center">设置父类</td>
+<td align="center">BaseEntity.class</td>
+</tr>
+<tr>
+<td align="center">superClass(String)</td>
+<td align="center">设置父类</td>
+<td align="center">com.baomidou.global.BaseEntity</td>
+</tr>
+<tr>
+<td align="center">disableSerialVersionUID</td>
+<td align="center">禁用生成 serialVersionUID</td>
+<td align="center">默认值:true</td>
+</tr>
+<tr>
+<td align="center">enableColumnConstant</td>
+<td align="center">开启生成字段常量</td>
+<td align="center">默认值:false</td>
+</tr>
+<tr>
+<td align="center">enableChainModel</td>
+<td align="center">开启链式模型</td>
+<td align="center">默认值:false</td>
+</tr>
+<tr>
+<td align="center">enableLombok</td>
+<td align="center">开启 lombok 模型</td>
+<td align="center">默认值:false</td>
+</tr>
+<tr>
+<td align="center">enableRemoveIsPrefix</td>
+<td align="center">开启 Boolean 类型字段移除 is 前缀</td>
+<td align="center">默认值:false</td>
+</tr>
+<tr>
+<td align="center">enableTableFieldAnnotation</td>
+<td align="center">开启生成实体时生成字段注解</td>
+<td align="center">默认值:false</td>
+</tr>
+<tr>
+<td align="center">enableActiveRecord</td>
+<td align="center">开启 ActiveRecord 模型</td>
+<td align="center">默认值:false</td>
+</tr>
+<tr>
+<td align="center">versionColumnName(String)</td>
+<td align="center">乐观锁字段名(数据库)</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">versionPropertyName(String)</td>
+<td align="center">乐观锁属性名(实体)</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">logicDeleteColumnName(String)</td>
+<td align="center">逻辑删除字段名(数据库)</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">logicDeletePropertyName(String)</td>
+<td align="center">逻辑删除属性名(实体)</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">naming</td>
+<td align="center">数据库表映射到实体的命名策略</td>
+<td align="center">默认下划线转驼峰命名:NamingStrategy.underline_to_camel</td>
+</tr>
+<tr>
+<td align="center">columnNaming</td>
+<td align="center">数据库表字段映射到实体的命名策略</td>
+<td align="center">默认为 null，未指定按照 naming 执行</td>
+</tr>
+<tr>
+<td align="center">addSuperEntityColumns(String…)</td>
+<td align="center">添加父类公共字段</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">addIgnoreColumns(String…)</td>
+<td align="center">添加忽略字段</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">addTableFills(IFill…)</td>
+<td align="center">添加表字段填充</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">addTableFills(List<IFill>)</td>
+<td align="center">添加表字段填充</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">idType(IdType)</td>
+<td align="center">全局主键类型</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">convertFileName(ConverterFileName)</td>
+<td align="center">转换文件名称</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">formatFileName(String)</td>
+<td align="center">格式化文件名称</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="title class_">StrategyConfig</span>.Builder()</span><br><span class="line">    .entityBuilder()</span><br><span class="line">    .superClass(BaseEntity.class)</span><br><span class="line">    .disableSerialVersionUID()</span><br><span class="line">    .enableChainModel()</span><br><span class="line">    .enableLombok()</span><br><span class="line">    .enableRemoveIsPrefix()</span><br><span class="line">    .enableTableFieldAnnotation()</span><br><span class="line">    .enableActiveRecord()</span><br><span class="line">    .versionColumnName(<span class="string">&quot;version&quot;</span>)</span><br><span class="line">    .versionPropertyName(<span class="string">&quot;version&quot;</span>)</span><br><span class="line">    .logicDeleteColumnName(<span class="string">&quot;deleted&quot;</span>)</span><br><span class="line">    .logicDeletePropertyName(<span class="string">&quot;deleteFlag&quot;</span>)</span><br><span class="line">    .naming(NamingStrategy.no_change)</span><br><span class="line">    .columnNaming(NamingStrategy.underline_to_camel)</span><br><span class="line">    .addSuperEntityColumns(<span class="string">&quot;id&quot;</span>, <span class="string">&quot;created_by&quot;</span>, <span class="string">&quot;created_time&quot;</span>, <span class="string">&quot;updated_by&quot;</span>, <span class="string">&quot;updated_time&quot;</span>)</span><br><span class="line">    .addIgnoreColumns(<span class="string">&quot;age&quot;</span>)</span><br><span class="line">    .addTableFills(<span class="keyword">new</span> <span class="title class_">Column</span>(<span class="string">&quot;create_time&quot;</span>, FieldFill.INSERT))</span><br><span class="line">    .addTableFills(<span class="keyword">new</span> <span class="title class_">Property</span>(<span class="string">&quot;updateTime&quot;</span>, FieldFill.INSERT_UPDATE))</span><br><span class="line">    .idType(IdType.AUTO)</span><br><span class="line">    .formatFileName(<span class="string">&quot;%sEntity&quot;</span>)</span><br><span class="line">    .build();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="2-Controller策略配置"><a href="#2-Controller策略配置" class="headerlink" title="2.Controller策略配置"></a>2.Controller策略配置</h5><table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">说明</th>
+<th align="center">示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">superClass(Class&lt;?&gt;)</td>
+<td align="center">设置父类</td>
+<td align="center">BaseController.class</td>
+</tr>
+<tr>
+<td align="center">superClass(String)</td>
+<td align="center">设置父类</td>
+<td align="center">com.baomidou.global.BaseController</td>
+</tr>
+<tr>
+<td align="center">enableHyphenStyle</td>
+<td align="center">开启驼峰转连字符</td>
+<td align="center">默认值:false</td>
+</tr>
+<tr>
+<td align="center">enableRestStyle</td>
+<td align="center">开启生成@RestController 控制器</td>
+<td align="center">默认值:false</td>
+</tr>
+<tr>
+<td align="center">convertFileName(ConverterFileName)</td>
+<td align="center">转换文件名称</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">formatFileName(String)</td>
+<td align="center">格式化文件名称</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="title class_">StrategyConfig</span>.Builder()</span><br><span class="line">    .controllerBuilder()</span><br><span class="line">    .superClass(BaseController.class)</span><br><span class="line">    .enableHyphenStyle()</span><br><span class="line">    .enableRestStyle()</span><br><span class="line">    .formatFileName(<span class="string">&quot;%sAction&quot;</span>)</span><br><span class="line">    .build();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="3-Service策略配置"><a href="#3-Service策略配置" class="headerlink" title="3.Service策略配置"></a>3.Service策略配置</h5><table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">说明</th>
+<th align="center">示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">superServiceClass(Class&lt;?&gt;)</td>
+<td align="center">设置 service 接口父类</td>
+<td align="center">BaseService.class</td>
+</tr>
+<tr>
+<td align="center">superServiceClass(String)</td>
+<td align="center">设置 service 接口父类</td>
+<td align="center">com.baomidou.global.BaseService</td>
+</tr>
+<tr>
+<td align="center">superServiceImplClass(Class&lt;?&gt;)</td>
+<td align="center">设置 service 实现类父类</td>
+<td align="center">BaseServiceImpl.class</td>
+</tr>
+<tr>
+<td align="center">superServiceImplClass(String)</td>
+<td align="center">设置 service 实现类父类</td>
+<td align="center">com.baomidou.global.BaseServiceImpl</td>
+</tr>
+<tr>
+<td align="center">convertServiceFileName(ConverterFileName)</td>
+<td align="center">转换 service 接口文件名称</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">convertServiceImplFileName(ConverterFileName)</td>
+<td align="center">转换 service 实现类文件名称</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">formatServiceFileName(String)</td>
+<td align="center">格式化 service 接口文件名称</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">formatServiceImplFileName(String)</td>
+<td align="center">格式化 service 实现类文件名称</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="title class_">StrategyConfig</span>.Builder()</span><br><span class="line">    .serviceBuilder()</span><br><span class="line">    .superServiceClass(BaseService.class)</span><br><span class="line">    .superServiceImplClass(BaseServiceImpl.class)</span><br><span class="line">    .formatServiceFileName(<span class="string">&quot;%sService&quot;</span>)</span><br><span class="line">    .formatServiceImplFileName(<span class="string">&quot;%sServiceImp&quot;</span>)</span><br><span class="line">    .build();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="4-Mapper策略配置"><a href="#4-Mapper策略配置" class="headerlink" title="4.Mapper策略配置"></a>4.Mapper策略配置</h5><table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">说明</th>
+<th align="center">示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">superClass(Class&lt;?&gt;)</td>
+<td align="center">设置父类</td>
+<td align="center">BaseMapper.class</td>
+</tr>
+<tr>
+<td align="center">superClass(String)</td>
+<td align="center">设置父类</td>
+<td align="center">com.baomidou.global.BaseMapper</td>
+</tr>
+<tr>
+<td align="center">enableMapperAnnotation</td>
+<td align="center">开启 @Mapper 注解</td>
+<td align="center">默认值:false</td>
+</tr>
+<tr>
+<td align="center">enableBaseResultMap</td>
+<td align="center">启用 BaseResultMap 生成</td>
+<td align="center">默认值:false</td>
+</tr>
+<tr>
+<td align="center">enableBaseColumnList</td>
+<td align="center">启用 BaseColumnList</td>
+<td align="center">默认值:false</td>
+</tr>
+<tr>
+<td align="center">cache(Class&lt;? extends Cache&gt;)</td>
+<td align="center">设置缓存实现类</td>
+<td align="center">MyMapperCache.class</td>
+</tr>
+<tr>
+<td align="center">convertMapperFileName(ConverterFileName)</td>
+<td align="center">转换 mapper 类文件名称</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">convertXmlFileName(ConverterFileName)</td>
+<td align="center">转换 xml 文件名称</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">formatMapperFileName(String)</td>
+<td align="center">格式化 mapper 文件名称</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">formatXmlFileName(String)</td>
+<td align="center">格式化 xml 实现类文件名称</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="title class_">StrategyConfig</span>.Builder()</span><br><span class="line">    .mapperBuilder()</span><br><span class="line">    .superClass(BaseMapper.class)</span><br><span class="line">    .enableMapperAnnotation()</span><br><span class="line">    .enableBaseResultMap()</span><br><span class="line">    .enableBaseColumnList()</span><br><span class="line">    .cache(MyMapperCache.class)</span><br><span class="line">    .formatMapperFileName(<span class="string">&quot;%sDao&quot;</span>)</span><br><span class="line">    .formatXmlFileName(<span class="string">&quot;%sXml&quot;</span>)</span><br><span class="line">    .build();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="自行编写配置一个代码生成器"><a href="#自行编写配置一个代码生成器" class="headerlink" title="自行编写配置一个代码生成器"></a>自行编写配置一个代码生成器</h2><h3 id="1-搭建配置结构"><a href="#1-搭建配置结构" class="headerlink" title="1.搭建配置结构"></a>1.搭建配置结构</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Generator</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        FastAutoGenerator</span><br><span class="line">                <span class="comment">//数据源配置</span></span><br><span class="line">                .create(<span class="string">&quot;&quot;</span>,<span class="string">&quot;&quot;</span>,<span class="string">&quot;&quot;</span>)</span><br><span class="line">                <span class="comment">//全局配置</span></span><br><span class="line">                .globalConfig(builder -&gt; &#123;</span><br><span class="line"></span><br><span class="line">                &#125;)</span><br><span class="line">                <span class="comment">//包配置</span></span><br><span class="line">                .packageConfig(builder -&gt; &#123;</span><br><span class="line"></span><br><span class="line">                &#125;)</span><br><span class="line">                <span class="comment">//模板配置</span></span><br><span class="line">                .templateConfig(builder -&gt; &#123;</span><br><span class="line"></span><br><span class="line">                &#125;)</span><br><span class="line">                <span class="comment">//插入配置</span></span><br><span class="line">                .injectionConfig(builder -&gt;&#123;</span><br><span class="line"></span><br><span class="line">                &#125;)</span><br><span class="line">                <span class="comment">//策略配置</span></span><br><span class="line">                .strategyConfig(builder -&gt;&#123;</span><br><span class="line"></span><br><span class="line">                &#125;)</span><br><span class="line">                <span class="comment">//执行</span></span><br><span class="line">                .execute();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-配置常用设置-只配用的到的"><a href="#2-配置常用设置-只配用的到的" class="headerlink" title="2.配置常用设置(只配用的到的)"></a>2.配置常用设置(只配用的到的)</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line">FastAutoGenerator</span><br><span class="line">               <span class="comment">//数据库配置</span></span><br><span class="line">               .create(<span class="string">&quot;jdbc:mysql://localhost:3306/mp?serverTimezone=GMT%2B8&quot;</span>,</span><br><span class="line">                       <span class="string">&quot;root&quot;</span>,</span><br><span class="line">                       <span class="string">&quot;1234&quot;</span>)</span><br><span class="line">               <span class="comment">//全局配置</span></span><br><span class="line">               .globalConfig(builder -&gt; &#123;</span><br><span class="line">                   builder.author(<span class="string">&quot;austin&quot;</span>) <span class="comment">// 设置作者</span></span><br><span class="line">                           .fileOverride() <span class="comment">// 覆盖已生成文件</span></span><br><span class="line">                           .dateType(DateType.TIME_PACK)<span class="comment">//时间策略</span></span><br><span class="line">                           .commentDate(<span class="string">&quot;yyyy-MM-dd&quot;</span>)<span class="comment">//注释日期</span></span><br><span class="line">                           .outputDir(System.getProperty(<span class="string">&quot;user.dir&quot;</span>) + <span class="string">&quot;/src/main/java&quot;</span>); <span class="comment">// 指定输出目录</span></span><br><span class="line">               &#125;)</span><br><span class="line">               <span class="comment">//包配置</span></span><br><span class="line">               .packageConfig(builder -&gt; &#123;</span><br><span class="line">                   builder.parent(<span class="string">&quot;com&quot;</span>) <span class="comment">// 设置父包名</span></span><br><span class="line">                           .moduleName(<span class="string">&quot;austin&quot;</span>) <span class="comment">// 设置父包模块名</span></span><br><span class="line">                           .entity(<span class="string">&quot;pojo&quot;</span>)    <span class="comment">//实体类存放包名</span></span><br><span class="line">                           .service(<span class="string">&quot;service&quot;</span>)<span class="comment">//service存放包名</span></span><br><span class="line">                           .serviceImpl(<span class="string">&quot;service&quot;</span>)<span class="comment">//serviceImpl存放包名</span></span><br><span class="line">                           .mapper(<span class="string">&quot;mapper&quot;</span>)<span class="comment">//mapper存放包名</span></span><br><span class="line">                           .xml(<span class="string">&quot;mapper&quot;</span>)<span class="comment">//Mapper XML 包名</span></span><br><span class="line">                           .controller(<span class="string">&quot;controller&quot;</span>)<span class="comment">//controller包名</span></span><br><span class="line">                           .other(<span class="string">&quot;utils&quot;</span>)</span><br><span class="line">                           .pathInfo(Collections.singletonMap(OutputFile.mapperXml, System.getProperty(<span class="string">&quot;user.dir&quot;</span>) + <span class="string">&quot;/src/main/resources/mapper&quot;</span>)); <span class="comment">// 设置mapperXml存放位置</span></span><br><span class="line">               &#125;)</span><br><span class="line">               <span class="comment">//策略配置</span></span><br><span class="line">               .strategyConfig(builder -&gt; &#123;</span><br><span class="line">                   builder.addInclude(<span class="string">&quot;user&quot;</span>) <span class="comment">// 设置需要生成的表名</span></span><br><span class="line">                           <span class="comment">// .addTablePrefix(&quot;t_&quot;, &quot;c_&quot;) // 设置过滤表前缀</span></span><br><span class="line">                           <span class="comment">//.addFieldSuffix(&quot;_flag&quot;)//设置过滤后缀</span></span><br><span class="line">                           <span class="comment">//Mapper策略配置</span></span><br><span class="line">                           .mapperBuilder()</span><br><span class="line">                           .superClass(BaseMapper.class)   <span class="comment">//设置父类</span></span><br><span class="line">                           .formatMapperFileName(<span class="string">&quot;%sMapper&quot;</span>)   <span class="comment">//格式化 mapper 文件名称</span></span><br><span class="line">                           .enableMapperAnnotation()       <span class="comment">//开启 @Mapper 注解</span></span><br><span class="line">                           .formatXmlFileName(<span class="string">&quot;%sXml&quot;</span>)<span class="comment">//格式化 Xml 文件名称</span></span><br><span class="line"></span><br><span class="line">                           <span class="comment">//service 策略配置</span></span><br><span class="line">                           .serviceBuilder()</span><br><span class="line">                           .formatServiceFileName(<span class="string">&quot;%sService&quot;</span>) <span class="comment">//格式化 service 接口文件名称，%s进行匹配表名，如 UserService</span></span><br><span class="line">                           .formatServiceImplFileName(<span class="string">&quot;%sServiceImpl&quot;</span>) <span class="comment">//格式化 service 实现类文件名称，%s进行匹配表名，如 UserServiceImpl</span></span><br><span class="line"></span><br><span class="line">                           <span class="comment">//4.3、实体类策略配置</span></span><br><span class="line">                           .entityBuilder()</span><br><span class="line">                           .enableLombok() <span class="comment">//开启 Lombok</span></span><br><span class="line">                           .disableSerialVersionUID()  <span class="comment">//不实现 Serializable 接口，不生产 SerialVersionUID</span></span><br><span class="line">                           .logicDeleteColumnName(<span class="string">&quot;isdeleted&quot;</span>)   <span class="comment">//逻辑删除字段名</span></span><br><span class="line">                           .naming(NamingStrategy.underline_to_camel)  <span class="comment">//数据库表映射到实体的命名策略：下划线转驼峰命</span></span><br><span class="line">                           .columnNaming(NamingStrategy.underline_to_camel)    <span class="comment">//数据库表字段映射到实体的命名策略：下划线转驼峰命</span></span><br><span class="line">                           .addTableFills(</span><br><span class="line">                                   <span class="keyword">new</span> <span class="title class_">Column</span>(<span class="string">&quot;create_time&quot;</span>, FieldFill.INSERT),</span><br><span class="line">                                   <span class="keyword">new</span> <span class="title class_">Column</span>(<span class="string">&quot;modify_time&quot;</span>, FieldFill.INSERT_UPDATE)</span><br><span class="line">                           )   <span class="comment">//添加表字段填充，&quot;create_time&quot;字段自动填充为插入时间，&quot;modify_time&quot;字段自动填充为插入修改时间</span></span><br><span class="line">                           .enableTableFieldAnnotation();       <span class="comment">// 开启生成实体时生成字段注解</span></span><br><span class="line"></span><br><span class="line">               &#125;)</span><br><span class="line">               .templateEngine(<span class="keyword">new</span> <span class="title class_">FreemarkerTemplateEngine</span>()) <span class="comment">// 使用Freemarker引擎模板，默认的是Velocity引擎模板</span></span><br><span class="line">               .execute();</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-测试"><a href="#3-测试" class="headerlink" title="3.测试"></a>3.测试</h3><h4 id="1-新建springboot项目并导入相关依赖"><a href="#1-新建springboot项目并导入相关依赖" class="headerlink" title="1.新建springboot项目并导入相关依赖"></a>1.新建springboot项目并导入相关依赖</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-java<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">scope</span>&gt;</span>runtime<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.projectlombok<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>lombok<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">optional</span>&gt;</span>true<span class="tag">&lt;/<span class="name">optional</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-test<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">scope</span>&gt;</span>test<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.baomidou<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-plus-generator<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.5.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.velocity<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>velocity-engine-core<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.3<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--freemarker--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.freemarker<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>freemarker<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.3.31<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">        </span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.baomidou<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-plus-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.5.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-编写项目连接数据库的配置文件（-properties或者-yaml）"><a href="#2-编写项目连接数据库的配置文件（-properties或者-yaml）" class="headerlink" title="2.编写项目连接数据库的配置文件（.properties或者.yaml）"></a>2.编写项目连接数据库的配置文件（.properties或者.yaml）</h4><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># mysql数据库连接</span></span><br><span class="line"><span class="attr">spring.datasource.driver-class-name</span>=<span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line"><span class="attr">spring.datasource.url</span>=<span class="string">jdbc:mysql://localhost:3306/mp?serverTimezone=GMT%2B8</span></span><br><span class="line"><span class="attr">spring.datasource.username</span>=<span class="string">root</span></span><br><span class="line"><span class="attr">spring.datasource.password</span>=<span class="string">1234</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3-编写代码生成器"><a href="#3-编写代码生成器" class="headerlink" title="3.编写代码生成器"></a>3.编写代码生成器</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Generator</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        FastAutoGenerator</span><br><span class="line">                <span class="comment">//数据库配置</span></span><br><span class="line">                .create(<span class="string">&quot;jdbc:mysql://localhost:3306/mp?serverTimezone=GMT%2B8&quot;</span>,</span><br><span class="line">                        <span class="string">&quot;root&quot;</span>,</span><br><span class="line">                        <span class="string">&quot;1234&quot;</span>)</span><br><span class="line"></span><br><span class="line">                <span class="comment">//全局配置</span></span><br><span class="line">                .globalConfig(builder -&gt; &#123;</span><br><span class="line">                    builder.author(<span class="string">&quot;austin&quot;</span>) <span class="comment">// 设置作者</span></span><br><span class="line">                            .fileOverride() <span class="comment">// 覆盖已生成文件</span></span><br><span class="line">                            .disableOpenDir()<span class="comment">//禁止打开输出目录</span></span><br><span class="line">                            .dateType(DateType.TIME_PACK)<span class="comment">//时间策略</span></span><br><span class="line">                            .commentDate(<span class="string">&quot;yyyy-MM-dd&quot;</span>)<span class="comment">//注释日期</span></span><br><span class="line">                            .outputDir(System.getProperty(<span class="string">&quot;user.dir&quot;</span>) + <span class="string">&quot;/src/main/java&quot;</span>); <span class="comment">// 指定输出目录</span></span><br><span class="line">                &#125;)</span><br><span class="line">                <span class="comment">//包配置</span></span><br><span class="line">                .packageConfig(builder -&gt; &#123;</span><br><span class="line">                    builder.parent(<span class="string">&quot;com&quot;</span>) <span class="comment">// 设置父包名</span></span><br><span class="line">                            .moduleName(<span class="string">&quot;austin&quot;</span>) <span class="comment">// 设置父包模块名</span></span><br><span class="line">                            .entity(<span class="string">&quot;pojo&quot;</span>)    <span class="comment">//实体类存放包名</span></span><br><span class="line">                            .service(<span class="string">&quot;service&quot;</span>)<span class="comment">//service存放包名</span></span><br><span class="line">                            .serviceImpl(<span class="string">&quot;service&quot;</span>)<span class="comment">//serviceImpl存放包名</span></span><br><span class="line">                            .mapper(<span class="string">&quot;mapper&quot;</span>)<span class="comment">//mapper存放包名</span></span><br><span class="line">                            .xml(<span class="string">&quot;mapper&quot;</span>)<span class="comment">//Mapper XML 包名</span></span><br><span class="line">                            .controller(<span class="string">&quot;controller&quot;</span>)<span class="comment">//controller包名</span></span><br><span class="line">                            .other(<span class="string">&quot;utils&quot;</span>)</span><br><span class="line">                            .pathInfo(Collections.singletonMap(OutputFile.mapperXml, System.getProperty(<span class="string">&quot;user.dir&quot;</span>) + <span class="string">&quot;/src/main/resources/mapper&quot;</span>)); <span class="comment">// 设置mapperXml存放位置</span></span><br><span class="line">                &#125;)</span><br><span class="line">                <span class="comment">//策略配置</span></span><br><span class="line">                .strategyConfig(builder -&gt; &#123;</span><br><span class="line">                    builder.addInclude(<span class="string">&quot;user&quot;</span>) <span class="comment">// 设置需要生成的表名</span></span><br><span class="line">                            <span class="comment">// .addTablePrefix(&quot;t_&quot;, &quot;c_&quot;) // 设置过滤表前缀</span></span><br><span class="line">                            <span class="comment">//.addFieldSuffix(&quot;_flag&quot;)//设置过滤后缀</span></span><br><span class="line">                            <span class="comment">//Mapper策略配置</span></span><br><span class="line">                            .mapperBuilder()</span><br><span class="line">                            .superClass(BaseMapper.class)   <span class="comment">//设置父类</span></span><br><span class="line">                            .formatMapperFileName(<span class="string">&quot;%sMapper&quot;</span>)   <span class="comment">//格式化 mapper 文件名称</span></span><br><span class="line">                            .enableMapperAnnotation()       <span class="comment">//开启 @Mapper 注解</span></span><br><span class="line">                            .formatXmlFileName(<span class="string">&quot;%sXml&quot;</span>)<span class="comment">//格式化 Xml 文件名称</span></span><br><span class="line"></span><br><span class="line">                            <span class="comment">//service 策略配置</span></span><br><span class="line">                            .serviceBuilder()</span><br><span class="line">                            .formatServiceFileName(<span class="string">&quot;%sService&quot;</span>) <span class="comment">//格式化 service 接口文件名称，%s进行匹配表名，如 UserService</span></span><br><span class="line">                            .formatServiceImplFileName(<span class="string">&quot;%sServiceImpl&quot;</span>) <span class="comment">//格式化 service 实现类文件名称，%s进行匹配表名，如 UserServiceImpl</span></span><br><span class="line"></span><br><span class="line">                            <span class="comment">//实体类策略配置</span></span><br><span class="line">                            .entityBuilder()</span><br><span class="line">                            .enableLombok() <span class="comment">//开启 Lombok</span></span><br><span class="line">                            .disableSerialVersionUID()  <span class="comment">//不实现 Serializable 接口，不生产 SerialVersionUID</span></span><br><span class="line">                            .logicDeleteColumnName(<span class="string">&quot;deleted&quot;</span>)   <span class="comment">//逻辑删除字段名</span></span><br><span class="line">                            .naming(NamingStrategy.underline_to_camel)  <span class="comment">//数据库表映射到实体的命名策略：下划线转驼峰命</span></span><br><span class="line">                            .columnNaming(NamingStrategy.underline_to_camel)    <span class="comment">//数据库表字段映射到实体的命名策略：下划线转驼峰命</span></span><br><span class="line">                            <span class="comment">//.addTableFills(</span></span><br><span class="line">                            <span class="comment">//       new Column(&quot;create_time&quot;, FieldFill.INSERT),</span></span><br><span class="line">                            <span class="comment">//      new Column(&quot;modify_time&quot;, FieldFill.INSERT_UPDATE)</span></span><br><span class="line">                           <span class="comment">// )   //添加表字段填充，&quot;create_time&quot;字段自动填充为插入时间，&quot;modify_time&quot;字段自动填充为插入修改时间</span></span><br><span class="line">                            .enableTableFieldAnnotation();       <span class="comment">// 开启生成实体时生成字段注解</span></span><br><span class="line"></span><br><span class="line">                &#125;)</span><br><span class="line">                .templateEngine(<span class="keyword">new</span> <span class="title class_">FreemarkerTemplateEngine</span>()) <span class="comment">// 使用Freemarker引擎模板，默认的是Velocity引擎模板</span></span><br><span class="line">                .execute();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="4-执行成功（图略）"><a href="#4-执行成功（图略）" class="headerlink" title="4.执行成功（图略）"></a>4.执行成功（图略）</h4><h4 id="5-说一说跑代码遇到的几个问题"><a href="#5-说一说跑代码遇到的几个问题" class="headerlink" title="5.说一说跑代码遇到的几个问题"></a>5.说一说跑代码遇到的几个问题</h4><h5 id="1-一定要按照步骤执行：构建springboot项目-gt-导入相关依赖-gt-编写配置文件-gt-放入代码生成器-gt-执行"><a href="#1-一定要按照步骤执行：构建springboot项目-gt-导入相关依赖-gt-编写配置文件-gt-放入代码生成器-gt-执行" class="headerlink" title="1.一定要按照步骤执行：构建springboot项目-&gt;导入相关依赖-&gt;编写配置文件-&gt;放入代码生成器-&gt;执行"></a>1.一定要按照步骤执行：构建springboot项目-&gt;导入相关依赖-&gt;编写配置文件-&gt;放入代码生成器-&gt;执行</h5><h5 id="但是在这之前，数据库跟表必须是建好的，我这篇markdown里没有写相关的建表语句，但是用的时候必须要看一下表的字段格式，这涉及到需要不需要开启下划线转驼峰命名的策略方法，以及要不要去掉表名字的前缀后缀的策略"><a href="#但是在这之前，数据库跟表必须是建好的，我这篇markdown里没有写相关的建表语句，但是用的时候必须要看一下表的字段格式，这涉及到需要不需要开启下划线转驼峰命名的策略方法，以及要不要去掉表名字的前缀后缀的策略" class="headerlink" title="但是在这之前，数据库跟表必须是建好的，我这篇markdown里没有写相关的建表语句，但是用的时候必须要看一下表的字段格式，这涉及到需要不需要开启下划线转驼峰命名的策略方法，以及要不要去掉表名字的前缀后缀的策略"></a>但是在这之前，数据库跟表必须是建好的，我这篇markdown里没有写相关的建表语句，但是用的时候必须要看一下表的字段格式，这涉及到需要不需要开启下划线转驼峰命名的策略方法，以及要不要去掉表名字的前缀后缀的策略</h5><h5 id="2-说一说依赖问题"><a href="#2-说一说依赖问题" class="headerlink" title="2.说一说依赖问题"></a>2.说一说依赖问题</h5><h5 id="我遇到的首先是苞米豆自身版本问题：mybatis-plus-boot-starter跟mybatis-plus-generator版本要对应；我测试成功版本是3-5-1，generator的版本目前出到了3-5-2，但是对应的starter3-5-2在mvn仓库里还没有；3-5-1是支持此代码生成器的最低版本，也是稳定版本；我尝试了mybatis-plus-generator（3-5-2）-mybatis-plus-boot-starter（3-5-1）的组合，代码会报错"><a href="#我遇到的首先是苞米豆自身版本问题：mybatis-plus-boot-starter跟mybatis-plus-generator版本要对应；我测试成功版本是3-5-1，generator的版本目前出到了3-5-2，但是对应的starter3-5-2在mvn仓库里还没有；3-5-1是支持此代码生成器的最低版本，也是稳定版本；我尝试了mybatis-plus-generator（3-5-2）-mybatis-plus-boot-starter（3-5-1）的组合，代码会报错" class="headerlink" title="我遇到的首先是苞米豆自身版本问题：mybatis-plus-boot-starter跟mybatis-plus-generator版本要对应；我测试成功版本是3.5.1，generator的版本目前出到了3.5.2，但是对应的starter3.5.2在mvn仓库里还没有；3.5.1是支持此代码生成器的最低版本，也是稳定版本；我尝试了mybatis-plus-generator（3.5.2）+mybatis-plus-boot-starter（3.5.1）的组合，代码会报错,"></a>我遇到的首先是苞米豆自身版本问题：mybatis-plus-boot-starter跟mybatis-plus-generator版本要对应；我测试成功版本是3.5.1，generator的版本目前出到了3.5.2，但是对应的starter3.5.2在mvn仓库里还没有；3.5.1是支持此代码生成器的最低版本，也是稳定版本；我尝试了mybatis-plus-generator（3.5.2）+mybatis-plus-boot-starter（3.5.1）的组合，代码会报错,</h5><h5 id="OutputFile-x3D-x3D-mapperXml-x3D-x3D-会爆红，运行代码会说找不到此文件，把generator版本降回3-5-1，爆红消失，应该是新的版本对此有改动，所以mybatis-plus的版本依赖控制真的很重要"><a href="#OutputFile-x3D-x3D-mapperXml-x3D-x3D-会爆红，运行代码会说找不到此文件，把generator版本降回3-5-1，爆红消失，应该是新的版本对此有改动，所以mybatis-plus的版本依赖控制真的很重要" class="headerlink" title="OutputFile.&#x3D;&#x3D;mapperXml&#x3D;&#x3D;会爆红，运行代码会说找不到此文件，把generator版本降回3.5.1，爆红消失，应该是新的版本对此有改动，所以mybatis-plus的版本依赖控制真的很重要"></a>OutputFile.&#x3D;&#x3D;mapperXml&#x3D;&#x3D;会爆红，运行代码会说找不到此文件，把generator版本降回3.5.1，爆红消失，应该是新的版本对此有改动，所以mybatis-plus的版本依赖控制真的很重要</h5><h5 id="然后是官方文档里快速入门案例中代码生成器那段代码中用到了Freemarker引擎模板，但是他并没有告知需要添加Freemarker的依赖，起初我以为他在generator中集成了Freemarker的引擎模板，所以很天真的没有添加其他依赖项进行测试，结果证明我还是错了。就像连接mysql还需要添加对应connector依赖一样。我感觉我大部分时间代码运行失败都跟项目缺少jar包有关。"><a href="#然后是官方文档里快速入门案例中代码生成器那段代码中用到了Freemarker引擎模板，但是他并没有告知需要添加Freemarker的依赖，起初我以为他在generator中集成了Freemarker的引擎模板，所以很天真的没有添加其他依赖项进行测试，结果证明我还是错了。就像连接mysql还需要添加对应connector依赖一样。我感觉我大部分时间代码运行失败都跟项目缺少jar包有关。" class="headerlink" title="然后是官方文档里快速入门案例中代码生成器那段代码中用到了Freemarker引擎模板，但是他并没有告知需要添加Freemarker的依赖，起初我以为他在generator中集成了Freemarker的引擎模板，所以很天真的没有添加其他依赖项进行测试，结果证明我还是错了。就像连接mysql还需要添加对应connector依赖一样。我感觉我大部分时间代码运行失败都跟项目缺少jar包有关。"></a>然后是官方文档里快速入门案例中代码生成器那段代码中用到了Freemarker引擎模板，但是他并没有告知需要添加Freemarker的依赖，起初我以为他在generator中集成了Freemarker的引擎模板，所以很天真的没有添加其他依赖项进行测试，结果证明我还是错了。就像连接mysql还需要添加对应connector依赖一样。我感觉我大部分时间代码运行失败都跟项目缺少jar包有关。</h5><h5 id="3-一定要编写连接数据库的配置文件！！！"><a href="#3-一定要编写连接数据库的配置文件！！！" class="headerlink" title="3.一定要编写连接数据库的配置文件！！！"></a>3.一定要编写连接数据库的配置文件！！！</h5><h5 id="开始我控制台出现了‘datasource’的关键词，我知道是数据库连接报错，就怀疑我在代码生成器中数据源配置错了，刚开始检查确实是，密码写错了。但是我修改之后问题依然存在（我为了方便测试代码，缩小检查范围，就新建了一个项目，并大幅删减代码生成器中的配置，以求达到先顺利运行的目的），这里的问题其实是我没有写项目连接数据库的配置文件，整个项目无法连接数据库，下面的代码自然无法运行跟数据库的相关操作了。所以运行代码编辑器的前提首先是项目连接数据库没有问题。而且代码生成器是无法读取-propertis或者-yaml文件中的配置的，所以数据库配置要写两次，一次是项目中一次是代码生成器中。"><a href="#开始我控制台出现了‘datasource’的关键词，我知道是数据库连接报错，就怀疑我在代码生成器中数据源配置错了，刚开始检查确实是，密码写错了。但是我修改之后问题依然存在（我为了方便测试代码，缩小检查范围，就新建了一个项目，并大幅删减代码生成器中的配置，以求达到先顺利运行的目的），这里的问题其实是我没有写项目连接数据库的配置文件，整个项目无法连接数据库，下面的代码自然无法运行跟数据库的相关操作了。所以运行代码编辑器的前提首先是项目连接数据库没有问题。而且代码生成器是无法读取-propertis或者-yaml文件中的配置的，所以数据库配置要写两次，一次是项目中一次是代码生成器中。" class="headerlink" title="开始我控制台出现了‘datasource’的关键词，我知道是数据库连接报错，就怀疑我在代码生成器中数据源配置错了，刚开始检查确实是，密码写错了。但是我修改之后问题依然存在（我为了方便测试代码，缩小检查范围，就新建了一个项目，并大幅删减代码生成器中的配置，以求达到先顺利运行的目的），这里的问题其实是我没有写项目连接数据库的配置文件，整个项目无法连接数据库，下面的代码自然无法运行跟数据库的相关操作了。所以运行代码编辑器的前提首先是项目连接数据库没有问题。而且代码生成器是无法读取.propertis或者.yaml文件中的配置的，所以数据库配置要写两次，一次是项目中一次是代码生成器中。"></a>开始我控制台出现了‘datasource’的关键词，我知道是数据库连接报错，就怀疑我在代码生成器中数据源配置错了，刚开始检查确实是，密码写错了。但是我修改之后问题依然存在（我为了方便测试代码，缩小检查范围，就新建了一个项目，并大幅删减代码生成器中的配置，以求达到先顺利运行的目的），这里的问题其实是我没有写项目连接数据库的配置文件，整个项目无法连接数据库，下面的代码自然无法运行跟数据库的相关操作了。所以运行代码编辑器的前提首先是项目连接数据库没有问题。而且代码生成器是无法读取.propertis或者.yaml文件中的配置的，所以数据库配置要写两次，一次是项目中一次是代码生成器中。</h5><h5 id="4-关于这个代码生成器的作用"><a href="#4-关于这个代码生成器的作用" class="headerlink" title="4.关于这个代码生成器的作用"></a>4.关于这个代码生成器的作用</h5><h5 id="在写大型项目的时候尤其是前后端分离的项目，这个可以起到简化开发的作用，减少一些重复机械性的动作（生成文件夹、实体类等），可以让人更专注于实现开发工作。有点像lombok。但是不适合三层、springMVC都还没掌握的初学者。这就是个工具，会配置就好，当然我想能够更个性化地配置，所以详细的记录了这一篇markdown。"><a href="#在写大型项目的时候尤其是前后端分离的项目，这个可以起到简化开发的作用，减少一些重复机械性的动作（生成文件夹、实体类等），可以让人更专注于实现开发工作。有点像lombok。但是不适合三层、springMVC都还没掌握的初学者。这就是个工具，会配置就好，当然我想能够更个性化地配置，所以详细的记录了这一篇markdown。" class="headerlink" title="在写大型项目的时候尤其是前后端分离的项目，这个可以起到简化开发的作用，减少一些重复机械性的动作（生成文件夹、实体类等），可以让人更专注于实现开发工作。有点像lombok。但是不适合三层、springMVC都还没掌握的初学者。这就是个工具，会配置就好，当然我想能够更个性化地配置，所以详细的记录了这一篇markdown。"></a>在写大型项目的时候尤其是前后端分离的项目，这个可以起到简化开发的作用，减少一些重复机械性的动作（生成文件夹、实体类等），可以让人更专注于实现开发工作。有点像lombok。但是不适合三层、springMVC都还没掌握的初学者。这就是个工具，会配置就好，当然我想能够更个性化地配置，所以详细的记录了这一篇markdown。</h5><h4 id="6-补充"><a href="#6-补充" class="headerlink" title="6.补充"></a>6.补充</h4><p><strong>①后续用的时候发现实体类的生成策略中开启lombok的选项选中之后，仅限于在实体类上加上@setter跟@getter注解，而我们大部分时候可能需要的注解是@data，这个需要手动改一下</strong></p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://austin0919.github.io/2022/04/13/Mybatis-Plus-CodeGenerator-new/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://austin0919.github.io/2022/04/13/Mybatis-Plus-CodeGenerator-new/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
